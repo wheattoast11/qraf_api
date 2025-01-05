@@ -1,0 +1,100 @@
+{
+    "version": "1.0",
+    "project_type": "quantum_ai_reasoning",
+    "language_settings": {
+        "primary": "python",
+        "auxiliary": ["json", "yaml", "markdown"]
+    },
+    "code_generation": {
+        "style": {
+            "max_line_length": 88,
+            "docstring_style": "google",
+            "type_hints": true,
+            "async_patterns": true
+        },
+        "imports": {
+            "group_order": [
+                "standard_library",
+                "third_party",
+                "quantum",
+                "local"
+            ],
+            "quantum_packages": [
+                "torch",
+                "sympy",
+                "numpy",
+                "networkx"
+            ]
+        }
+    },
+    "reasoning_augmentation": {
+        "proof_patterns": {
+            "enable_symbolic_verification": true,
+            "quantum_state_tracking": true,
+            "density_optimization": true
+        },
+        "type_checking": {
+            "strict_tensor_types": true,
+            "quantum_state_validation": true,
+            "proof_coherence_checks": true
+        }
+    },
+    "testing": {
+        "frameworks": ["pytest"],
+        "coverage_threshold": 85,
+        "quantum_specific_tests": {
+            "state_verification": true,
+            "density_bounds": true,
+            "coherence_metrics": true
+        }
+    },
+    "documentation": {
+        "auto_generate": true,
+        "include_math_notation": true,
+        "proof_visualization": true
+    },
+    "linting": {
+        "enabled": true,
+        "tools": [
+            "flake8",
+            "mypy",
+            "black",
+            "isort"
+        ],
+        "quantum_specific_rules": {
+            "verify_unitary_operations": true,
+            "check_density_bounds": true,
+            "validate_proof_steps": true
+        }
+    },
+    "completion": {
+        "quantum_context_aware": true,
+        "proof_step_suggestions": true,
+        "tensor_operation_completion": true
+    },
+    "refactoring": {
+        "preserve_quantum_invariants": true,
+        "maintain_proof_coherence": true,
+        "optimize_density_patterns": true
+    },
+    "performance": {
+        "memory_tracking": {
+            "tensor_allocation": true,
+            "proof_space_complexity": true
+        },
+        "optimization_targets": [
+            "quantum_operations",
+            "proof_search",
+            "density_calculations"
+        ]
+    },
+    "security": {
+        "quantum_state_protection": true,
+        "proof_integrity_verification": true
+    },
+    "editor_settings": {
+        "quantum_syntax_highlighting": true,
+        "proof_step_folding": true,
+        "density_visualization": true
+    }
+}
